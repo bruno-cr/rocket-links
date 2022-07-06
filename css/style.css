@@ -16,7 +16,7 @@ body.dark-blue{
   --text-color: white;
 }
 
-body.pink{
+/* body.pink{
   --bg-color: #fff0f6;
   --text-color: #1f000b;
   --primary-color: #D6336C;
@@ -27,7 +27,7 @@ body.dark-pink{
   --text-color: #FFF0F6;
   --primary-color: #D6336C;
   --primary-color-dark: #A61E4D;
-}
+} */
 
 body{
   background: var(--bg-color);
@@ -37,6 +37,69 @@ body{
 
 a{
   text-decoration: none;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin: 10px;
+  margin-left: 80%;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #364fc7;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 .container{
@@ -51,8 +114,8 @@ img{
 
 img.avatar{
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   padding: 3.7px;
   border: 4px solid var(--primary-color);
 }
@@ -83,7 +146,7 @@ ul li a{
   justify-content: center;
   background: var(--primary-color);
   color: white;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
   margin-bottom: 16px;
   border-radius: 6px;
@@ -96,7 +159,7 @@ ul li a:hover{
 
 footer{
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
   opacity: 0.6;
   transition: opacity 400ms;
 }
