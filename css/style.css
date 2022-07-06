@@ -17,12 +17,12 @@ body.dark-blue{
 }
 
 /* Modificar tema pelo SO do dispositivo */
-@media(prefers-color-scheme: dark){
+/* @media(prefers-color-scheme: dark){
   html{
     --bg-color: #00082f;
     --text-color: white;
   }
-}
+} */
 
 /* body.pink{
   --bg-color: #fff0f6;
